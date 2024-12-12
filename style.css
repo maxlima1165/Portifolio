@@ -29,6 +29,7 @@ header {
 
 header .logo img {
     width: 120px;
+    border-radius: 20px;
 }
 
 header nav ul {
@@ -107,11 +108,10 @@ header .agendamento .btn {
 }
 
 .servicos .service-item img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 10px;
+    width: 100%; /* Imagem ocupa 100% do container */
+    max-width: 500px; /* Limita o tamanho máximo da imagem */
+    height: auto; /* Mantém a proporção da imagem */
 }
-
 .servicos .service-item h3 {
     font-size: 1.2rem;
     margin-bottom: 5px;
@@ -146,7 +146,9 @@ footer {
     }
 
     .servicos .service-item img {
-        height: auto;
+        width: 90%; /* Ajusta a largura das imagens */
+        max-width: 400px; /* Limita o tamanho máximo */
+        margin: 0 auto; /* Centraliza as imagens */
     }
 
     header .logo img {
