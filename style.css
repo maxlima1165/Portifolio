@@ -1,0 +1,167 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo do site */
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #222;
+    color: #fff7f7;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    font-size: 3.0rem;
+    gap: 15px;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fafafa;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .agendamento .btn {
+    background-color: #ff590c;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: x-large;
+}
+
+/* Seção Hero */
+.hero {
+    background-image: url('barbearia.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #3a3131;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px; /* Ajuste para o cabeçalho fixo */
+}
+
+.hero h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.hero .btn {
+    background-color: #6d3d16;
+    color: #c21313;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Seção Sobre */
+.sobre {
+    padding: 50px 20px;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 160px;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+.sobre h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Seção de Serviços */
+.servicos {
+    background-color: #222;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.servicos .service-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.servicos .service-item {
+    width: 30%;
+    padding: 10px;
+    background-color: #3d3a3a;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(56, 54, 54, 0.1);
+    transition: transform 0.5s;
+}
+
+.servicos .service-item:hover {
+    transform: scale(1.05);
+}
+
+.servicos .service-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+img{
+    height: auto;
+    border-radius: 25px;
+}
+.servicos .service-item h3 {
+    margin-top: 10px;
+    font-size: 2.0rem
+}
+.servicos .service-item {
+    width: 80%; /* Tornar as imagens menores em telas pequenas */
+    margin-bottom: 20px;
+}
+/* Rodapé */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
