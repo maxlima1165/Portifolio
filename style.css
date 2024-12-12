@@ -7,16 +7,17 @@
 
 /* Corpo do site */
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #222;
-    color: #fff7f7;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #333, #222);
+    color: #f4f4f4;
+    line-height: 1.6;
 }
 
 /* Cabeçalho */
 header {
     background-color: #222;
     color: #fff;
-    padding: 20px;
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,44 +25,49 @@ header {
     top: 0;
     width: 100%;
     z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 header .logo img {
-    width: 150px;
+    width: 120px;
+    border-radius: 10px;
 }
 
 header nav ul {
     list-style: none;
     display: flex;
-    font-size: 3.0rem;
-    gap: 15px;
-}
-
-header nav ul li {
-    margin: 0 15px;
+    gap: 50px ;
+    font-size: 2.0rem;
 }
 
 header nav ul li a {
-    color: #fafafa;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff7c11;
 }
 
 header .agendamento .btn {
-    background-color: #ff590c;
-    color: #ffffff;
+    background-color: #ff7c11;
+    color: #fff;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    font-size: x-large;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+header .agendamento .btn:hover {
+    background-color: #e0650f;
 }
 
 /* Seção Hero */
 .hero {
-    background-image: url('barbearia.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #3a3131;
+    background: url('barbearia.jpg') no-repeat center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -71,97 +77,146 @@ header .agendamento .btn {
 }
 
 .hero h1 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #ddd;
 }
 
 .hero .btn {
-    background-color: #6d3d16;
-    color: #c21313;
-    padding: 15px 25px;
-    font-size: 1.2rem;
+    background-color: #ff7c11;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 1rem;
     text-decoration: none;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #e0650f;
 }
 
 /* Seção Sobre */
 .sobre {
-    padding: 50px 20px;
+    padding: 80px 20px 50px;
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 160px;
+    color: #f4f4f4;
+    background-color: #252424;
 }
 
-/* Estilos para dispositivos móveis */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        gap: 10px;
-    }
-
 .sobre h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
+    color: #ff7c11;
+}
+
+.sobre p {
+    font-size: 2.0rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.8;
 }
 
 /* Seção de Serviços */
 .servicos {
-    background-color: #222;
-    padding: 50px 20px;
+    background-color: #333;
+    padding: 80px 20px;
     text-align: center;
+}
+
+.servicos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ff7c11;
 }
 
 .servicos .service-list {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: space-around;
     gap: 20px;
 }
 
 .servicos .service-item {
     width: 30%;
-    padding: 10px;
-    background-color: #3d3a3a;
-    border-radius: 8px;
-    box-shadow: 0 5px 10px rgba(56, 54, 54, 0.1);
-    transition: transform 0.5s;
+    padding: 20px;
+    background-color: #444;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .servicos .service-item:hover {
     transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .servicos .service-item img {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
-img{
-    height: auto;
-    border-radius: 25px;
-}
+
 .servicos .service-item h3 {
-    margin-top: 10px;
-    font-size: 2.0rem
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ff7c11;
 }
-.servicos .service-item {
-    width: 80%; /* Tornar as imagens menores em telas pequenas */
-    margin-bottom: 20px;
+
+.servicos .service-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ddd;
 }
+
 /* Rodapé */
 footer {
     background-color: #222;
-    color: #fff;
+    color: #f4f4f4;
     padding: 20px;
     text-align: center;
+    font-size: 0.9rem;
 }
 
 /* Responsividade */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .servicos .service-item {
+        width: 90%;
+    }
+}
+
 @media (max-width: 480px) {
+    header .logo img {
+        width: 100px;
+    }
+
     .hero h1 {
         font-size: 1.5rem;
     }
 
     .hero p {
-        font-size: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .hero .btn {
+        font-size: 0.9rem;
+        padding: 10px 20px;
     }
 }

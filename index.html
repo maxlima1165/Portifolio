@@ -3,55 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./img/icon.png">
+    <title>Barbearia Veigh - Unidade Jardim São Paulo</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="logo.png">
-    <title>Barbearia Veigh</title>
-
+    <link rel="icon" type="image/png" href="./img/icon.png">
 </head>
 <body>
+    <!-- Cabeçalho -->
     <header>
         <div class="logo">
-            <img src="./img/logoveigh.png" alt="Logo Barbearia Veigh">
+            <a href="#sobre">
+                <img src="./img/logoveigh.png" alt="Logo da Barbearia Veigh">
+            </a>
         </div>
-       <nav>
+        <nav aria-label="Navegação principal">
             <ul>
-                <li><a href="#sobre">Inicio</a></li>
+                <li><a href="#sobre">Início</a></li>
                 <li><a href="#servicos">Serviços</a></li>
-                <li><a href="https://w.app/dhXo2v">Contato</a></li>
-            </ul> 
-        </nav> 
+                <li><a href="https://w.app/dhXo2v" target="_blank">Contato</a></li>
+            </ul>
+        </nav>
         <div class="agendamento">
             <a href="https://w.app/dhXo2v" class="btn">Agende seu horário</a>
         </div>
     </header>
-    <section id="sobre" class="sobre">
-        <p>A Barbearia Veigh oferece uma experiência única, com um ambiente moderno e acolhedor, especializado em cortes de cabelo e serviços de barbearia de alta qualidade. A equipe é composta por profissionais qualificados, prontos para atender com precisão e atenção ao estilo de cada cliente. Com um atendimento diferenciado e foco no conforto, a barbearia garante resultados impecáveis, seja para um corte clássico ou um estilo mais moderno.</p>
-    </section>
+    
+    <!-- Sobre -->
+    <div id="sobre" class="sobre">
+        <h2>Sobre a Barbearia</h2>
+        <p>A Barbearia Veigh é o local ideal para quem busca mais do que apenas um corte de cabelo ou cuidado com a barba. Com um ambiente acolhedor e moderno, nossos profissionais combinam técnica e estilo para oferecer uma experiência de alto padrão.
 
+            Priorizamos a satisfação dos clientes, trazendo os melhores produtos e tendências do mercado. Seja para um corte clássico ou um visual ousado, a Veigh transforma sua aparência enquanto garante conforto e bem-estar. Nossa missão é redefinir o conceito de barbearia, unindo tradição e inovação.
+    </div>
+    
+
+    <!-- Serviços -->
     <section id="servicos" class="servicos">
         <h2>Serviços</h2>
         <div class="service-list">
             <div class="service-item">
-                <img src="./img/barbearia1.png" alt="Corte de Cabelo">
+                <img src="./img/barba1.jpg" alt="Exemplo de corte de cabelo">
                 <h3>Corte de Cabelo</h3>
-                <p>Estilos modernos e clássicos para todos os gostos.</p>
+                <p>Estilos modernos e clássicos feitos por profissionais.</p>
             </div>
             <div class="service-item">
-                <img src="./img/barba1.jpg" alt="Barba">
+                <img src="./img/barbearia1.png" alt="Exemplo de barba">
                 <h3>Barba</h3>
                 <p>Cuidado preciso para um acabamento perfeito.</p>
             </div>
         </div>
     </section>
+    
+    </section>
+
+    <!-- Rodapé -->
     <footer>
         <div class="footer-content">
             <p>Barbearia Veigh</p>
-            <p>Telefone: (69) 99371-6918</p>
-            <p>Redes sociais: Instagram | Facebook</p>
+            <p>Telefone: (11) 1234-5678</p>
+            <p>Desenvolvido Dev Max<p>
         </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
